@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:config/rpc-config.properties"/>
+
+    <bean class="com.rpc.core.RpcServer"/>
+
+    <bean class="com.rpc.core.RpcMapperScannerConfigurer">
+        <property name="beanNameGenerator">
+            <bean class="org.springframework.beans.factory.support.DefaultBeanNameGenerator"/>
+        </property>
+        <property name="basePackage" >
+            <map>
+                <entry key="zrc">
+                    <list>
+                        <value>com.rpc.service</value>
+                    </list>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

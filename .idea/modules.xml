@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rpc-client-explam/rpc-client-explam.iml" filepath="$PROJECT_DIR$/rpc-client-explam/rpc-client-explam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-common/rpc-common.iml" filepath="$PROJECT_DIR$/rpc-common/rpc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-core/rpc-core.iml" filepath="$PROJECT_DIR$/rpc-core/rpc-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-inft/rpc-inft.iml" filepath="$PROJECT_DIR$/rpc-inft/rpc-inft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-registry/rpc-registry.iml" filepath="$PROJECT_DIR$/rpc-registry/rpc-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc-server-explam/rpc-server-explam.iml" filepath="$PROJECT_DIR$/rpc-server-explam/rpc-server-explam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zrrpcframe.iml" filepath="$PROJECT_DIR$/zrrpcframe.iml" />
+    </modules>
+  </component>
+</project>
