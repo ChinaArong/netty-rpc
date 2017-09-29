@@ -43,17 +43,17 @@ public class RpcServer implements ApplicationContextAware,InitializingBean {
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        zookeeperServer.setLogic(serviceLogics);
-        //get rpcservers
-        Map<String, Object> serviceBeans = applicationContext
-                .getBeansWithAnnotation(RpcService.class);
-        for(Object service:serviceBeans.values()){
-            Class<?> aClass = service.getClass();
-            Class<?>[] interfaces = aClass.getInterfaces();
-            for(Class clazz:interfaces){
-                handlerMap.put(clazz.getName(),service);
-            }
-        }
+//        zookeeperServer.setLogic(serviceLogics);
+//        //get rpcservers
+//        Map<String, Object> serviceBeans = applicationContext
+//                .getBeansWithAnnotation(RpcService.class);
+//        for(Object service:serviceBeans.values()){
+//            Class<?> aClass = service.getClass();
+//            Class<?>[] interfaces = aClass.getInterfaces();
+//            for(Class clazz:interfaces){
+//                handlerMap.put(clazz.getName(),service);
+//            }
+//        }
     }
 
     @Override

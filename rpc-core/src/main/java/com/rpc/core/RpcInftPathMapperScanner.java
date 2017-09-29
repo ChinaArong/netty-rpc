@@ -1,5 +1,6 @@
 package com.rpc.core;
 
+import org.springframework.beans.BeanMetadataAttribute;
 import org.springframework.beans.factory.BeanDefinitionStoreException;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanDefinitionHolder;
@@ -73,8 +74,6 @@ public class RpcInftPathMapperScanner extends ClassPathBeanDefinitionScanner {
             definition.setBeanClass(this.mapperFactoryBean.getClass());
             definition.getPropertyValues().add("serverName",serverName);
             definition.setAutowireMode(AbstractBeanDefinition.AUTOWIRE_BY_TYPE);
-            String beanName = beanNameGenerator.generateBeanName(definition, registry);
-            registry.registerBeanDefinition(beanName, definition);
         }
     }
 

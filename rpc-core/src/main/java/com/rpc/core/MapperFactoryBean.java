@@ -41,7 +41,7 @@ public class MapperFactoryBean<T> implements FactoryBean<T> {
 
     @Override
     public Class<?> getObjectType() {
-        return null;
+        return mapperInterface;
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.rpc;
 
 import com.rpc.service.IHolleWordService;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.Resource;
 
@@ -10,11 +11,12 @@ import javax.annotation.Resource;
  */
 public class FremakTest extends BaseTest {
 
-    @Resource(name="IHolleWordService")
+//    @Resource(name="IHolleWordService")
+    @Autowired
     private IHolleWordService iHolleWordService;
 
     @Test
-    public void test1(){
+    public void test1() throws InterruptedException {
         iHolleWordService.test1();
         System.out.println(111);
     }
